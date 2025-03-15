@@ -84,6 +84,10 @@
             <version>4.7.2</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-messaging-kafka</artifactId>
+        </dependency>
 
         <!-- Jira REST Java Client Core -->
         <dependency>

@@ -13,8 +13,10 @@ public class JqlBuilder {
             if(issuetypes != null && issuetypes.size() > 0) {
                 parts.add(buildIssuetypes(issuetypes));
             }
-            for(String condition : conditions) {
-                parts.add("(" + condition + ")");
+            if(conditions != null) {
+                for(String condition : conditions) {
+                    parts.add("(" + condition + ")");
+                }
             }
             return String.join(" AND ", parts);
         }
